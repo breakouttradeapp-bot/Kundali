@@ -49,7 +49,6 @@
                 android:textColor="#90A4AE"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Form Card -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,7 +84,6 @@
                             android:textColor="#FFFFFF"
                             android:inputType="textPersonName|textCapWords"
                             android:imeOptions="actionNext" />
-
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <!-- Date of Birth -->
@@ -113,7 +111,6 @@
                             android:clickable="true"
                             android:hint="dd/MM/yyyy"
                             android:textColorHint="#546E7A" />
-
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <!-- Time of Birth -->
@@ -141,7 +138,6 @@
                             android:clickable="true"
                             android:hint="HH:MM (24hr)"
                             android:textColorHint="#546E7A" />
-
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <!-- Place of Birth -->
@@ -164,10 +160,9 @@
                             android:textColor="#FFFFFF"
                             android:inputType="textPostalAddress"
                             android:imeOptions="actionNext" />
-
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <!-- Language -->
+                    <!-- ✅ LANGUAGE BLOCK RESTORED -->
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/tilLanguage"
                         style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
@@ -208,24 +203,21 @@
                     android:gravity="center"
                     android:padding="16dp">
 
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        app:lottie_autoPlay="true"
-                        app:lottie_loop="true" />
+                    <ProgressBar
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:indeterminate="true" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="@string/generating_kundali"
                         android:textColor="#B0BEC5"
                         android:textSize="14sp"
-                        android:layout_marginTop="8dp" />
-
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
             </FrameLayout>
 
-            <!-- Generate Button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnGenerate"
                 android:layout_width="match_parent"
@@ -238,18 +230,6 @@
                 app:iconGravity="textStart"
                 app:cornerRadius="16dp"
                 app:backgroundTint="#FFD700" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="12dp"
-                android:text="@string/data_secure"
-                android:textSize="11sp"
-                android:textColor="#546E7A"
-                android:drawableStart="@drawable/ic_lock_small"
-                android:drawablePadding="4dp"
-                android:drawableTint="#546E7A" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
