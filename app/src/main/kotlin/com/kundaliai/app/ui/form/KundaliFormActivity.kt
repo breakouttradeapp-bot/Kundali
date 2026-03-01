@@ -32,8 +32,7 @@ class KundaliFormActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityKundaliFormBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+	setContentView(android.R.layout.simple_list_item_1)
 
         languageManager = LanguageManager(this)
         selectedLanguage = languageManager.getSavedLanguage()
